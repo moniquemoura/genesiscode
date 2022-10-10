@@ -1,0 +1,173 @@
+/**
+ * @author Monique Moura <eumoniqueribeiro@gmail.com>
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #5761b2, #1fc5a8);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    width: 700px;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, .20);
+    border: 1px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    z-index: 1;
+    padding: 40px;
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+li {
+    padding: 15px;
+}
+
+/* Radio */
+
+
+
+.wrapper {
+    display: inline-flex;
+    height: 40px;
+    width: 417px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .option {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+
+.dot {
+    margin-right: 10px;
+}
+
+.wrapper .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.wrapper .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #5761b2;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+.wrapper .option span {
+    font-size: 20px;
+    color: #808080;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  } */
+
+.selected {
+    border-color: #5761b2 !important;
+    background: #5761b2 !important;
+}
+
+.selected span {
+    color: #fff !important;
+}
+
+.selected .dot {
+    background: #fff !important;
+}
+
+.selected .dot::before {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;  
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.btn:hover {
+    background-color: #555555;
+    color: white;
+}

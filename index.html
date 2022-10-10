@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Code</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="author" content="Monique Moura">
+    <meta name="description" content="Conversor de cifra de cezar e base64">
+    <meta name="keywords" content="cifra, cezar, base64">
+</head>
+
+<body>
+    <main>
+        <form class="container">
+            <ul>
+                <h1>Genesis Code</h1>
+                <li class="wrapper">
+                    <input type="radio" name="select" id="cifradecesar" >
+                    <label for="cifradecesar" class="option cifradecesar">
+                        <div class="dot"></div>
+                        <span>Cifra de César</span>
+                    </label>
+
+
+                    <input type="radio" name="select" id="base64">
+                    <label for="base64" class="option base64">
+                        <div class="dot"></div>
+                        <span>Base64</span>
+                    </label>
+                </li>
+
+
+                <li>
+                    <label for="Resultado">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="50" rows="10"
+                        placeholder="Escreva aqui sua mensagem..."></textarea>
+                <li>
+                    <p id="key">
+                        <label for="incrementar">Incremento:
+                            <input type="number" value="1" min="0" name="incrementar" id="incrementar">
+                        </label>
+                    </p>
+                </li>
+                <li class="wrapper">
+                    <input type="radio" name="select" id="codificar" >
+                    <label for="codificar" class="option codificar">
+                        <div class="dot"></div>
+                        <span>Codificar</span>
+                    </label>
+
+                    <input type="radio" name="select" id="decodificar">
+                    <label for="decodificar" class="option decodificar">
+                        <div class="dot"></div>
+                        <span>Decodificar</span>
+                    </label>
+                </li>
+                <button type="button" class="btn" id="btn">Codificar</button>
+                <li>
+                    <label for="resultado">Resultado: </label>
+                    <textarea name="resultado" id="resultado" cols="50" rows="10"></textarea>
+                </li>
+            </ul>
+        </form>
+    </main>
+    <script src="./js/code.js"></script>
+</body>
+
+</html>
