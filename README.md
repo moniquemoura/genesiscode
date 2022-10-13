@@ -1,2 +1,2 @@
 # Genesis Code
-Conversor de Cifra de Cezar e Base64.
+Conversor de Cifra de César e Base64.
